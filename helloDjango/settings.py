@@ -31,12 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
+    'django.contrib.admin', #管理员站点
+    'django.contrib.auth', #权限认证系统
+    'django.contrib.contenttypes', #内容类型框架
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles', #管理静态文件的框架
+    'polls.apps.PollsConfig'
 ]
 
 MIDDLEWARE = [
